@@ -39,4 +39,46 @@
   background: red;
   z-index: 1;
 }
-/* end 1  */
+/* end hexagon1  */
+/* start hexagon2 */
+.hexagon2 {
+  width: 100px;
+  height: 55px;
+  position: relative;
+}
+
+.hexagon2, 
+.hexagon2:before, 
+.hexagon2:after {
+  background: red;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);   
+}
+
+.hexagon2:before,
+.hexagon2:after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  width: 57px;
+  height: 57px;
+  transform: rotate(145deg) skew(22.5deg);
+}
+
+.hexagon2:before {
+  top: -29px;
+}
+
+.hexagon2:after {
+  top: 27px;
+}
+
+.hexagon2 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 55px;
+  background: red;
+  z-index: 1;
+}
+/* end hexagon2  */
